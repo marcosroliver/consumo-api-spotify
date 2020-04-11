@@ -6,7 +6,7 @@
 .Busca {
     margin: 5vh;
 }
-.Busca textarea{
+.Busca input{
     font-family: Roboto-Bold;
     color: #999999;
     font-size: 48px;
@@ -15,12 +15,38 @@
     width: 100%;
     resize: none;
     background-color: transparent;
+    margin-bottom: 30px;
 }
 
-.Busca p{
-    font-size: 24px;
+.Titulo{
+    font-size: 24px !important;
+    margin: 30px 0px 30px 0px;
 }
 
 .Lista{
-    height: 10vh;
+    min-height: 10vh;
+    display: -webkit-box;
+}
+
+.Elemento{
+    align-items: center;
+    margin-right: 50px;    
+}
+
+.Thumb{
+ 
+    height: 100px;
+    width: 100px;
+    background-color: #fafafa;
+    opacity: 50%;    
+}
+
+.Nome_Album{
+    font-size: 14px !important;
+    color: #fafafa !important;
+}
+
+.Nome_Artista{
+    font-size: 14px !important;
+    color: #999999 !important; 
 }

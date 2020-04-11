@@ -1,9 +1,14 @@
 body {
   background-color: #222326;
-  margin: 0;
   font-family: Roboto;
   -webkit-font-smoothing: Roboto;
   -moz-osx-font-smoothing: Roboto;
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -ms-transform: translate(-50%, -10%);
+  transform: translate(-50%, -10%);
 }
 
 code {

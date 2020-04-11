@@ -1,5 +1,7 @@
 import React from 'react';
-import Busca from './Busca/busca'
+import {Switch, Route} from 'react-router-dom';
+import Busca from './Busca/busca';
+
 import logo from '../assets/imgs/spotify_logo.svg';
 import './App.css';
 import '../assets/fonts/Roboto-Regular.ttf'
@@ -10,7 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <div><img src={logo} className="spot-logo" alt="Spotify" /></div>
-        <Busca />
+        <Busca/>
       </header>
     </div>
   );
