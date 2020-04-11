@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: local('Roboto-Bold'), url(../../assets/fonts/Roboto-Bold.ttf) format('truetype');
+  }
+
+.Busca {
+    margin: 5vh;
+}
+.Busca textarea{
+    font-family: Roboto-Bold;
+    color: #999999;
+    font-size: 48px;
+    border: none ;
+    border-bottom: 2px solid #999999;
+    width: 100%;
+    resize: none;
+    background-color: transparent;
+}
+
+.Busca p{
+    font-size: 24px;
+}
+
+.Lista{
+    height: 10vh;
+}
