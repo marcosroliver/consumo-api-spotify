@@ -1,17 +1,16 @@
 import React from 'react';
-import logo from '../assets/img/logo.svg';
+import Busca from './Busca/busca'
+import logo from '../assets/imgs/spotify_logo.svg';
 import './App.css';
-
 import '../assets/fonts/Roboto-Regular.ttf'
-import '../assets/fonts/Roboto-Bold.ttf'
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Busque por um Artista</p>
-        <textarea>Teste</textarea>
+      <div><img src={logo} className="spot-logo" alt="Spotify" /></div>
+        <Busca />
       </header>
     </div>
   );

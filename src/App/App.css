@@ -4,28 +4,20 @@
   src: local('Roboto'), url(../assets/fonts/Roboto-Regular.ttf) format('truetype');
 }
 
-@font-face {
-  font-family: 'Roboto-Bold';
-  src: local('Roboto-Bold'), url(../assets/fonts/Roboto-Bold.ttf) format('truetype');
-}
-
-
 .App {
   text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
+.spot-logo {
+  height: 10vmin;
   pointer-events: none;
+  margin: 2vh;
 }
 
 .App-header {
   background-color: #222326;
   min-height: 10vh;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: -webkit-inline-box;
   font-size: calc(10px + 2vmin);
   color: white;
 }
