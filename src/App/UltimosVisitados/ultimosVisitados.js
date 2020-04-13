@@ -1,4 +1,5 @@
 import React from 'react'
+import Elemento from '../Elemento/elemento'
 import './ultimosVisitados.css'
 
 class ultimosVisitados extends React.Component{
@@ -6,24 +7,12 @@ class ultimosVisitados extends React.Component{
         return(
         <div className='ultimosVisitados'>
             <p className='Titulo'>Álbuns visitados recentemente</p> 
-            <div className="Lista">
-                <div className='Elemento'>
-                    <div className='Thumb'><img src=''></img></div>
-                    <p className='Nome_Album'>Nome do Album</p>
-                    <p className='Nome_Artista'>Nome do Artista</p>
-                </div>
-                <div className='Elemento'>
-                    <div className='Thumb'><img src=''></img></div>
-                    <p className='Nome_Album'>Nome do Album</p>
-                    <p className='Nome_Artista'>Nome do Artista</p>
-                </div>
-                <div className='Elemento'>
-                    <div className='Thumb'><img src=''></img></div>
-                    <div>
-                    <p className='Nome_Album'>Nome do Album</p>
-                    <p className='Nome_Artista'>Nome do Artista</p>
-                    </div>
-                </div>            
+            <div className='Lista'>
+                <Elemento/>
+                <Elemento/>
+                <Elemento/>
+                <Elemento/>
+                <Elemento/>
             </div>
         </div>
         )

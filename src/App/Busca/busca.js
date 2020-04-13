@@ -10,21 +10,27 @@ class Busca extends React.Component{
     render(){
         return(
             <div className='Busca'>                
-                <main>
                     <Switch>
                         <Route exact path='/'>
-                            <p>Busque por artistas, álbuns ou músicas</p>
-                            <input placeholder="Comece a escrever..." rows="1" cols="100%"></input>
-                            <ListaHome/>
+                            <header>
+                                <p>Busque por artistas, álbuns ou músicas</p>
+                                <input placeholder="Comece a escrever..." rows="1" cols="100%"></input>
+                            </header>
+                            <main>
+                                <ListaHome/>
+                            </main>
                             </Route>
                         <Route path='/Resultado'>
-                            <p>Busque por artistas, álbuns ou músicas</p>
-                            <input placeholder="Comece a escrever..." rows="1" cols="100%"></input>
-                            <ListaResultado/>
+                            <header>
+                                <p>Busque por artistas, álbuns ou músicas</p>
+                                <input placeholder="Comece a escrever..." rows="1" cols="100%"></input>
+                            </header>
+                            <main>
+                                <ListaResultado/>
+                            </main>
                         </Route>
                         <Route path='/Album' component={DetalheAlbum}/>
                     </Switch>
-                </main>
             </div>
         )
     }

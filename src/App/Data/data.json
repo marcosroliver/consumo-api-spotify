@@ -1,0 +1,191 @@
+{
+    "albums": {
+      "href": "https://api.spotify.com/v1/search?query=Bob&type=album&market=US&offset=0&limit=1",
+      "items": [
+        {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4xRYI6VqpkE3UwrDrAZL8L"
+              },
+              "href": "https://api.spotify.com/v1/artists/4xRYI6VqpkE3UwrDrAZL8L",
+              "id": "4xRYI6VqpkE3UwrDrAZL8L",
+              "name": "Logic",
+              "type": "artist",
+              "uri": "spotify:artist:4xRYI6VqpkE3UwrDrAZL8L"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4F87p1aiFwHeU4uu65MaPV"
+          },
+          "href": "https://api.spotify.com/v1/albums/4F87p1aiFwHeU4uu65MaPV",
+          "id": "4F87p1aiFwHeU4uu65MaPV",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273e19b1b51cdd35051e17cf6dc",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02e19b1b51cdd35051e17cf6dc",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851e19b1b51cdd35051e17cf6dc",
+              "width": 64
+            }
+          ],
+          "name": "Bobby Tarantino II",
+          "release_date": "2018-03-09",
+          "release_date_precision": "day",
+          "total_tracks": 13,
+          "type": "album",
+          "uri": "spotify:album:4F87p1aiFwHeU4uu65MaPV"
+        }
+      ],
+      "limit": 1,
+      "next": "https://api.spotify.com/v1/search?query=Bob&type=album&market=US&offset=1&limit=1",
+      "offset": 0,
+      "previous": null,
+      "total": 10001
+    },
+    "artists": {
+      "href": "https://api.spotify.com/v1/search?query=Bob&type=artist&market=US&offset=0&limit=1",
+      "items": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2QsynagSdAqZj3U9HgDzjD"
+          },
+          "followers": {
+            "href": null,
+            "total": 8005657
+          },
+          "genres": [
+            "reggae"
+          ],
+          "href": "https://api.spotify.com/v1/artists/2QsynagSdAqZj3U9HgDzjD",
+          "id": "2QsynagSdAqZj3U9HgDzjD",
+          "images": [
+            {
+              "height": 858,
+              "url": "https://i.scdn.co/image/b5aae2067db80f694a980e596e7f49618c1206c9",
+              "width": 1000
+            },
+            {
+              "height": 549,
+              "url": "https://i.scdn.co/image/4cd57e5e12ea2c24644c40886d65a9b22eca9802",
+              "width": 640
+            },
+            {
+              "height": 172,
+              "url": "https://i.scdn.co/image/02fd758d9805ef44d1caafc35ff17a47f9dff098",
+              "width": 200
+            },
+            {
+              "height": 55,
+              "url": "https://i.scdn.co/image/357fe6ef3655b1b33855e33546e3c174a38a1a36",
+              "width": 64
+            }
+          ],
+          "name": "Bob Marley & The Wailers",
+          "popularity": 82,
+          "type": "artist",
+          "uri": "spotify:artist:2QsynagSdAqZj3U9HgDzjD"
+        }
+      ],
+      "limit": 1,
+      "next": "https://api.spotify.com/v1/search?query=Bob&type=artist&market=US&offset=1&limit=1",
+      "offset": 0,
+      "previous": null,
+      "total": 10001
+    },
+    "tracks": {
+      "href": "https://api.spotify.com/v1/search?query=Bob&type=track&market=US&offset=0&limit=1",
+      "items": [
+        {
+          "album": {
+            "album_type": "compilation",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/72DWYHmqi5JZdTbdEvYs9f"
+            },
+            "href": "https://api.spotify.com/v1/albums/72DWYHmqi5JZdTbdEvYs9f",
+            "id": "72DWYHmqi5JZdTbdEvYs9f",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b27318aca0b7f23710ad283ed215",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e0218aca0b7f23710ad283ed215",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d0000485118aca0b7f23710ad283ed215",
+                "width": 64
+              }
+            ],
+            "name": "Reggaeton para cocinar",
+            "release_date": "2020-04-10",
+            "release_date_precision": "day",
+            "total_tracks": 28,
+            "type": "album",
+            "uri": "spotify:album:72DWYHmqi5JZdTbdEvYs9f"
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1vyhD5VmyZ7KMfW5gqLgo5"
+              },
+              "href": "https://api.spotify.com/v1/artists/1vyhD5VmyZ7KMfW5gqLgo5",
+              "id": "1vyhD5VmyZ7KMfW5gqLgo5",
+              "name": "J Balvin",
+              "type": "artist",
+              "uri": "spotify:artist:1vyhD5VmyZ7KMfW5gqLgo5"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 209453,
+          "explicit": false,
+          "external_ids": {
+            "isrc": "MXUM71600599"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/614j6s5hzuVOSW5gx9TIqs"
+          },
+          "href": "https://api.spotify.com/v1/tracks/614j6s5hzuVOSW5gx9TIqs",
+          "id": "614j6s5hzuVOSW5gx9TIqs",
+          "is_local": false,
+          "is_playable": true,
+          "name": "Bobo",
+          "popularity": 0,
+          "preview_url": null,
+          "track_number": 6,
+          "type": "track",
+          "uri": "spotify:track:614j6s5hzuVOSW5gx9TIqs"
+        }
+      ],
+      "limit": 1,
+      "next": "https://api.spotify.com/v1/search?query=Bob&type=track&market=US&offset=1&limit=1",
+      "offset": 0,
+      "previous": null,
+      "total": 100001
+    }
+  }

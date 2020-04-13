@@ -1,0 +1,19 @@
+.Elemento{
+    width: 160px ;
+    cursor:pointer;
+    margin: 15px
+}
+.Elemento img {
+    width: 100% ; 
+    height: auto ;
+}
+
+.Elemento p{
+    text-align: center ;
+    overflow-wrap: break-word;
+    color:#fafafa;
+}
+
+.Elemento p:nth-child(3){
+    color:#999999
+}
