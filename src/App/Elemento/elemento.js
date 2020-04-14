@@ -2,6 +2,11 @@ import React from'react'
 import './elemento.css'
 import Data from '../Data/data.json'
 
+var Spotify = require ('spotify-web-api-js')
+var s = new Spotify();
+
+
+
 class Elemento extends React.Component{
    constructor(props){
        super(props)

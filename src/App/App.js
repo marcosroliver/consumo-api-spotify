@@ -6,6 +6,7 @@ import logo from '../assets/imgs/spotify_logo.svg';
 import './App.css';
 import '../assets/fonts/Roboto-Regular.ttf'
 
+
 class App extends React.Component {
   constructor(props){
     super(props);
@@ -45,7 +46,7 @@ class App extends React.Component {
         <header className="App-header">
         <div>
         <div><img src={logo} className="spot-logo" alt="Spotify" /></div>
-        <button><a href='http://localhost:8888'>Login Spotify</a></button>
+        <a href='http://localhost:8888/login'><button>Login Spotify</button></a>
         <button onClick={this.topTracksLorde}>Top Track</button>
         </div>
           <Busca/>
