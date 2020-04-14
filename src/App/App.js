@@ -7,47 +7,61 @@ import './App.css';
 import '../assets/fonts/Roboto-Regular.ttf'
 
 
+
+
 class App extends React.Component {
   constructor(props){
     super(props);
-    const parametros = this.getHashParams();
-    const token = parametros.access_token;
-  }
-  getHashParams() {
-    var hashParams = {};
-    var e, r = /([^&;=]+)=?([^&;]*)/g,q = window.location.hash.substring(1);
-    e = r.exec(q)
-    while (e) {
-        hashParams[e[1]] = decodeURIComponent(e[2]);
-        e = r.exec(q);
-    }
-    console.log(this.hashParams)
-    return hashParams;
+    this.getHashParams = this.getHashParams.bind(this) 
+    this.topTracksLorde = this.topTracksLorde.bind(this)
   }
 
-  topTracksLorde = () =>{
-    $.ajax({
+  getHashParams=()=> {
+    var hashParams = [];
+    var e, r = /([^&;=]+)=?([^&;]*)/g,q = window.location.search.substring(1);
+    var local= localStorage.getItem('access_token');
+    
+    if(local != undefined)
+    {
+      alert('tem um item' + local)
+      return local
+    }    
+    else{
+    while ( e = r.exec(q)) {
+      hashParams[e[1]] = decodeURIComponent(e[2]);
+    }
+    localStorage.setItem('access_token', hashParams.access_token)
+    return hashParams;
+    }
+  }
+
+  
+  topTracksLorde=(s)=>{
+      $.ajax({
         method: "GET",
         dataType: "Json",
         url:"https://api.spotify.com/v1/artists/163tK9Wjr9P9DmM0AVK7lm/top-tracks?country=BR",
         headers: {
-        Authorization: `Bearer ${this.token}`
+        Authorization: 'Bearer '+ s
       }
     })
     .then(dados=>{
-      alert('Musica' + dados.tracks[0].name)
-      alert('Objeto'+ this.topTracksLorde)
+      console.log(dados)
     })
   }
+
+ 
   
   render(){
+    const parametros = this.getHashParams()
+    const token = parametros.access_token
     return (
       <div className="App">
         <header className="App-header">
         <div>
         <div><img src={logo} className="spot-logo" alt="Spotify" /></div>
         <a href='http://localhost:8888/login'><button>Login Spotify</button></a>
-        <button onClick={this.topTracksLorde}>Top Track</button>
+        <button onClick={()=>this.topTracksLorde(token)}>Top Track</button>
         </div>
           <Busca/>
         </header>

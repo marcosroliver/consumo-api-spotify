@@ -13,8 +13,8 @@ class Elemento extends React.Component{
        this.state = {dados:[Data]}
    }
     render(){  
-        const total = this.state.dados.map((dados,indice) => (dados.indice)) 
-        console.log(total)
+        // const total = this.state.dados.map((dados,indice) => (dados.indice)) 
+        // console.log(total)
         return(
                 <div className='Elemento'>   
                         <img src='https://i.scdn.co/image/ab67616d0000b273e19b1b51cdd35051e17cf6dc'/>
