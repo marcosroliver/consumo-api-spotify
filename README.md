@@ -37,9 +37,7 @@ Clicando no botão Login Spotify a aplicação irá logar por meio do conector q
 
 ![](https://github.com/marcosroliver/consumo-api-spotify/blob/master/src/assets/imgs/access_token.png)
 
-
 No console do navegador é possivel verificar o consumo de alguns endpoints da api
-
 
 ![](https://github.com/marcosroliver/web-login-api-spotify/blob/master/console.png)
 
