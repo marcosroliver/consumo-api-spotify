@@ -31,17 +31,17 @@ Vc será redirecionado para o site do spotify e após preencher os dados retorna
 
 Está aplicação encontra-se em desenvolvimento, para acessar as áreas e ver os templates criados acesse os botões abaixo do logo.
 
-![](https://github.com/marcosroliver/web-login-api-spotify/blob/master/image.png)
+![](https://github.com/marcosroliver/consumo-api-spotify/blob/master/src/assets/imgs/img-login.png)
 
 Clicando no botão Login Spotify a aplicação irá logar por meio do conector que está rodando na porta 8888 (configurado na instalação) e retornará mudando a url com o parametro do <b>access_token</b>. 
 
-![](https://github.com/marcosroliver/web-login-api-spotify/blob/master/image.png)
+![](https://github.com/marcosroliver/consumo-api-spotify/blob/master/src/assets/imgs/access_token.png)
 
 
 No console do navegador é possivel verificar o consumo de alguns endpoints da api
 
 
-![](https://github.com/marcosroliver/web-login-api-spotify/blob/master/image.png)
+![](https://github.com/marcosroliver/web-login-api-spotify/blob/master/console.png)
 
 
 
