@@ -9,4 +9,4 @@
 # production
 /build
 .DS_Store
-.log
+yarn-error.log

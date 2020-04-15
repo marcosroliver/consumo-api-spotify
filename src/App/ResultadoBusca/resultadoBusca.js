@@ -1,31 +1,27 @@
 import React from 'react'
 import './resultadoBusca.css'
+import Elemento from '../Elemento/elemento'
 
 class ResultadoBusca extends React.Component{
     render(){
         return(
             <div class="ResultadoBusca">
-                <p className='Titulo'>Resultados encontrados para "TERMO PESQUISA"</p> 
-                <div className="Lista">
-                    <div className='Elemento'>
-                        <div className='Thumb'><img src=''></img></div>
-                        <p className='Nome_Album'>Nome do Album</p>
-                        <p className='Nome_Artista'>Nome do Artista</p>
-                    </div>
-                    <div className='Elemento'>
-                        <div className='Thumb'><img src=''></img></div>
-                        <p className='Nome_Album'>Nome do Album</p>
-                        <p className='Nome_Artista'>Nome do Artista</p>
-                    </div>
-                    <div className='Elemento'>
-                        <div className='Thumb'><img src=''></img></div>
-                        <div>
-                        <p className='Nome_Album'>Nome do Album</p>
-                        <p className='Nome_Artista'>Nome do Artista</p>
-                        </div>
-                    </div>            
+                <p className='Titulo'>Resultaados encontrados para "Bob"</p>
+                <div className="Lista"> 
+                <Elemento/>
+                <Elemento/>
+                <Elemento/>
+                <Elemento/>
+                <Elemento/>
                 </div>
-            </div>
+                <div className="Lista"> 
+                <Elemento/>
+                <Elemento/>
+                <Elemento/>
+                <Elemento/>
+                <Elemento/>
+                </div>
+        </div>
         )
     }
 }

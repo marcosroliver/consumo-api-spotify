@@ -19,20 +19,12 @@ class App extends React.Component {
   getHashParams=()=> {
     var hashParams = [];
     var e, r = /([^&;=]+)=?([^&;]*)/g,q = window.location.search.substring(1);
-    var local= localStorage.getItem('access_token');
     
-    if(local != undefined)
-    {
-      alert('tem um item' + local)
-      return local
-    }    
-    else{
     while ( e = r.exec(q)) {
       hashParams[e[1]] = decodeURIComponent(e[2]);
     }
     localStorage.setItem('access_token', hashParams.access_token)
     return hashParams;
-    }
   }
 
   
@@ -61,7 +53,6 @@ class App extends React.Component {
         <div>
         <div><img src={logo} className="spot-logo" alt="Spotify" /></div>
         <a href='http://localhost:8888/login'><button>Login Spotify</button></a>
-        <button onClick={()=>this.topTracksLorde(token)}>Top Track</button>
         </div>
           <Busca/>
         </header>
