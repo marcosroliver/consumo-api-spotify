@@ -5,7 +5,9 @@ import Spotify from 'spotify-web-api-js'
 var s = new Spotify()
 s.setAccessToken(localStorage.getItem('access_token'))
 
-s.searchTracks('Love',{limit:5})
+
+//teste de consumo da API por pesquisa retorno no console.log
+s.searchTracks('bob',{limit:5})
   .then(function(data) {
     for (const x in data.tracks.items) {
         console.log(`nomeArtista:${data.tracks.items[x].album.artists[0].name}`,
@@ -14,11 +16,12 @@ s.searchTracks('Love',{limit:5})
             `idAlbum':${data.tracks.items[x].album.id}`,
             `uri:${data.tracks.items[x].uri}`)
     }
-    console.log('Search by "Love"', data)
+    console.log('Search by "Bob"', data)
   }, function(err) {
     console.error(err);
   });
 
+//teste de consumo da API por album retorno no console.log
 s.getAlbums(['5U4W9E5WsYb2jUQWePT8Xm', '3KyVcddATClQKIdtaap4bV'])
   .then(function(data) {
     console.log('Albums information', data);
@@ -29,19 +32,14 @@ s.getAlbums(['5U4W9E5WsYb2jUQWePT8Xm', '3KyVcddATClQKIdtaap4bV'])
 class Elemento extends React.Component{
    constructor(props){
        super(props)
-       this.state = {dados:[Data]}
    }
     render(){  
-        // const total = this.state.dados.map((dados,indice) => (dados.indice)) 
-        // console.log(total)
-
-        return(
-                <div className='Elemento'>
-                       <img src='https://i.scdn.co/image/ab67616d0000b273e19b1b51cdd35051e17cf6dc'/>
-                        <p>Nome do album em duas linhas</p>
-                        <p>Nome do artista</p>                 
-                </div>
-              
+         return(
+          <div className='Elemento'>
+              <img src='https://i.scdn.co/image/ab67616d0000b273e19b1b51cdd35051e17cf6dc'/>
+              <p>Nome do album em duas linhas</p>
+              <p>Nome do artista</p>                 
+          </div>       
         )
     }
 }

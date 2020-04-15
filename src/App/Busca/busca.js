@@ -7,6 +7,14 @@ import ListaResultado from '../listaResultado';
 import './busca.css';
 
 class Busca extends React.Component{
+    constructor(props){
+        super(props)
+        this.state = {name:''}        
+    }
+
+    //teste de mudança no input
+     digitou= (envent) => console.log('teste foi mudado o estado da busca')
+
     render(){
         return(
             <div className='Busca'>                
@@ -14,7 +22,7 @@ class Busca extends React.Component{
                         <Route exact path='/'>
                             <header>
                                 <p>Busque por artistas, álbuns ou músicas</p>
-                                <input placeholder="Comece a escrever..." rows="1" cols="100%"></input>
+                                <input onChange={(event)=>this.digitou(event)} placeholder="Comece a escrever..." rows="1" cols="100%"></input>
                             </header>
                             <main>
                                 <ListaHome/>
@@ -23,7 +31,7 @@ class Busca extends React.Component{
                         <Route path='/Resultado'>
                             <header>
                                 <p>Busque por artistas, álbuns ou músicas</p>
-                                <input placeholder="Comece a escrever..." rows="1" cols="100%"></input>
+                                <input onChange={(event)=>this.digitou(event)} placeholder="Comece a escrever..." rows="1" cols="100%"></input>
                             </header>
                             <main>
                                 <ListaResultado/>

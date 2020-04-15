@@ -6,7 +6,7 @@ class ResultadoBusca extends React.Component{
     render(){
         return(
             <div class="ResultadoBusca">
-                <p className='Titulo'>Resultaados encontrados para "Bob"</p>
+                <p className='Titulo'>Resultados encontrados para "Bob"</p>
                 <div className="Lista"> 
                 <Elemento/>
                 <Elemento/>

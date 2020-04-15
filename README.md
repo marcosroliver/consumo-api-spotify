@@ -1,25 +1,42 @@
 # Consumo de API do Spotify
 
-Este repositório contém um teste de consumo do da API do Spotify. 
+Este repositório contém um teste de consumo da API do Spotify. 
 
-É possível encontrar uma estrutura front onde para pesquisa de musicas artista, lista de últimos visitados e últimos buscados.
-
+É possível encontrar uma estrutura front onde temos uma pesquisa de musicas, artista e album, uma lista de últimos visitados e últimos buscados, uma página de resultado da busca e a página de detalhe do album.
 
 ## Requisitos
 
-* Linguagem: Javascript
 * Ambiente: NodeJS
 * FrameWork utiliazdo: ReactJS
-* Instalação do pacote (nome do pacote)
+* Instalação do pacote https://github.com/marcosroliver/web-login-api-spotify
+* Instalar o NPM e o YARN
+* Windows / MacOS
+* Rodar a aplicação no ambiente local na porta 3000.
 
-## Criação do ambiente 
+## Instalação
 
-Para rodar a aplicação em seu ambiente é necessário fazer o download do repósitório que será o conector ao spotify  que pode ser encontrado neste endereço (colocar o endereço).
+Para rodar a aplicação em seu ambiente é necessário fazer o download do repósitório que será o conector ao spotify  que pode ser encontrado neste endereço https://github.com/marcosroliver/web-login-api-spotify.
 
-Em seguida efetuar o clone deste repositório e no seu terminal rodar o comando npm install na pasta do projeto.
+Em seguida efetuar o clone deste repositório e no seu terminal/cmd rodar o comando yarn install na pasta que foi clonada.
+
+Após rodar o yarn start.  
+
+Para se conectar ao Spotifi basta clicar no botão esquerdo abaixo do logo.
+
+Vc será redirecionado para o site do spotify e após preencher os dados retornará para a página da aplicação.
+
+## Pontos importantes
+
+Está aplicação encontra-se em desenvolvimento, para acessar as áreas e ver os templates criados acesse os botões abaixo do logo.
 
 
-## 
+Clicando no botão Login Spotify a aplicação irá logar por meio do conector que está rodando na porta 8888 (configurado na instalação) e retornará mudando a url com o parametro do <b>access_token</b>. 
+
+
+
+No console do navegador é possivel verificar o consumo de alguns endpoints da api
+
+
 
 
 
